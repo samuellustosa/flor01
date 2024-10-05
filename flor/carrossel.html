@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Carrossel</title>
+    <style>
+        body {
+            background-color: #212529; /* Fundo escuro */
+            color: white; /* Texto branco para melhor contraste */
+            overflow: hidden; /* Esconder overflow */
+        }
+        h1 {
+            color: #fff; /* Cor do texto do título */
+            font-size: 2.5em; /* Tamanho do texto */
+            margin-bottom: 30px; /* Margem abaixo do título */
+            animation: blink 3s infinite;
+        }
+                    /* Animação de piscar */
+            @keyframes blink {
+            0%, 100% {
+                opacity: 1; /* Totalmente visível */
+            }
+            50% {
+                opacity: 0; /* Invisível */
+            }
+}
+        .carousel-item img {
+            max-width: 25%; /* Largura máxima das imagens */
+            height: auto; /* Altura automática para manter a proporção */
+            margin: auto; /* Centraliza as imagens */
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center my-5 flower-container">
+        <h1>Sophia & Samuel</h1>
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/IMG-20240827-WA0025.jpg" class="d-block" alt="Foto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/IMG-20240915-WA0006.jpg" class="d-block" alt="Foto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/IMG-20240922-WA0005.jpg" class="d-block" alt="Foto 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/IMG-20240925-WA0025.jpg" class="d-block" alt="Foto 4">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
